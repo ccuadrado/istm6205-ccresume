@@ -1,0 +1,83 @@
+body,html 
+{ 
+	margin: 0; 
+	padding: 0; 
+	font-size:12px;
+	font-family: Verdana;
+}
+
+body 
+{
+	background:white ;
+}
+
+div.banner
+{
+	height:80px;
+	background: url('images/gw_linear_black.png') no-repeat left top;
+	width: 860px;
+	margin: 30px auto 0px auto;
+	
+}
+
+
+
+div.address
+{
+	font-weight: bold;
+	color: #3E3E3E;
+	font-size:14px;
+	margin: 10px auto 0px auto;
+}
+
+p  
+{
+	margin:0px 20px 20px 20px;
+	color: #3E3E3E;
+	text-align:justify;
+}
+
+#Header
+{
+	font-weight: bold;
+	font-size:17px;
+	font-family: Georgia;
+	color: black;
+	padding: 4px 10px;
+}
+
+
+td.titles
+{
+	font-weight: bold;
+	color: #3E3E3E;
+	text-align:right;
+	padding:10px;
+	vertical-align:top;
+}
+
+td.items
+{
+
+	color:#3E3E3E;
+	padding:10px;
+}
+
+dt
+{
+	font-weight: bold;
+	color: #3E3E3E;
+	padding:10px;
+	vertical-align:top;
+}
+
+dd
+{
+	color: #3E3E3E;
+	padding:5px;
+}
+
+a
+{
+	font-weight: bold;
+}

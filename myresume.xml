@@ -1,0 +1,245 @@
+<Resume>
+	<ResumeId>
+		<IdValue>CC1234</IdValue>
+	</ResumeId>
+	<DistributionGuidelines>
+	  <DistributeTo>
+		<Name>Bob Smith Enterprises</Name>
+		<ContactMethod>
+			<Telephone>
+				<FormattedNumber></FormattedNumber>
+			</Telephone>
+			<InternetWebAddress></InternetWebAddress>
+		</ContactMethod>
+	  </DistributeTo>
+	<DoNotDistributeTo>
+		<Name></Name>
+	</DoNotDistributeTo>
+	</DistributionGuidelines>
+	<StructuredXMLResume>
+	  <ContactInfo>
+		<PersonName>
+			<FormattedName>Catalino Cuadrado</FormattedName>
+		</PersonName>
+		<ContactMethod>
+			<Telephone>
+				<FormattedNumber>+1 202 994 3827 </FormattedNumber>
+				<Office>202 994 3827</Office>
+				<Cell>202 341 0447</Cell>
+			</Telephone>
+			<Fax>
+				<FormattedNumber></FormattedNumber>
+			</Fax>
+			<InternetEmailAddress>catalino.mail@gmail.com</InternetEmailAddress>
+			<InternetWebAddress></InternetWebAddress>
+			<PostalAddress>
+				<CountryCode>US</CountryCode>
+				<PostalCode>22202</PostalCode>
+				<Region>VA</Region>
+				<Municipality>Arlington</Municipality>
+				<DeliveryAddress>1400 South Joyce St.</DeliveryAddress>
+				<Recipient>
+					<OrganizationName></OrganizationName>
+				</Recipient>
+			</PostalAddress>
+		</ContactMethod>
+	  </ContactInfo>
+	  <ExecutiveSummary>
+	    Click me to demonstrate my excellent CSS and HTML/Javascript Skills.
+          </ExecutiveSummary>
+	  <Objective>
+            To be awesome. 
+	  </Objective>
+	  <EmploymentHistory>
+	    <EmployerOrg>
+	       <EmployerOrgName>Classified</EmployerOrgName>
+	       <InternetDomainName>www.nsa.gov</InternetDomainName>
+	       <EmployerContactInfo>
+		  <LocationSummary>
+			<Municipality></Municipality>
+			<Region></Region>
+		  </LocationSummary>
+	       </EmployerContactInfo>
+	       <PositionHistory positionType="fulltime">
+		  <Title>Secret Agent</Title>
+		  <OrgName>
+			<OrganizationName>Clandestine Operations Division</OrganizationName>
+		  </OrgName>
+		  <Description>
+                    Accepted Missions that were both impossible and improbable
+                    Scaled Tall Buildings in a Singel Bound
+                    Brain Matter Deconstruction Specialist
+		  </Description>
+		  <StartDate>
+			<YearMonth>February 2009</YearMonth>
+		  </StartDate>
+		  <EndDate>
+			<YearMonth>Current</YearMonth>
+		  </EndDate>
+	       </PositionHistory>
+	  </EmployerOrg>
+	
+	  <EmployerOrg>
+	       <EmployerOrgName>Jonathan Coulton, Enterprises</EmployerOrgName>
+	       <InternetDomainName>www.joco.com</InternetDomainName>
+	       <EmployerContactInfo>
+		  <LocationSummary>
+			<Municipality></Municipality>
+			<Region></Region>
+		  </LocationSummary>
+	       </EmployerContactInfo>
+	       <PositionHistory positionType="fulltime">
+		  <Title>Code Monkey</Title>
+		  <OrgName>
+			<OrganizationName>The Cubicle Next Door</OrganizationName>
+		  </OrgName>
+		  <Description>
+                    Boring meetings with boring manager Rob.
+                    Wrote God Damn Login page myself.
+                    Likes Fritos, Tab, and Mountain Dew.
+		  </Description>
+		  <StartDate>
+			<YearMonth>September 2005</YearMonth>
+		  </StartDate>
+		  <EndDate>
+			<YearMonth>January 2007</YearMonth>
+		  </EndDate>
+	       </PositionHistory>
+	  </EmployerOrg>
+	</EmploymentHistory>
+	<EducationHistory>
+	  <SchoolOrInstitution schoolType="business">
+			<School>
+				<InternetDomainName>www.gwu.edu</InternetDomainName>
+				<SchoolName>George Washington University</SchoolName>
+			</School>
+			<Degree degreeType="masters">
+			  <DegreeName>Master of Science in Information Systems Technology</DegreeName>
+			  <DegreeDate>
+				<YearMonth>May 2013 Candidate</YearMonth>
+			  </DegreeDate>
+			  <DegreeMajor>
+				<Name></Name>
+			  </DegreeMajor>
+			  <DegreeMinor>
+				<Name></Name>
+			  </DegreeMinor>
+			  <Comments></Comments>
+			</Degree>
+		</SchoolOrInstitution>
+	
+		<SchoolOrInstitution schoolType="undergrad"> 
+			<School>
+				<InternetDomainName>www.wesleyan.edu</InternetDomainName>
+				<SchoolName>Wesleyan University</SchoolName>
+			</School>
+			<Degree degreeType="bachelors">
+			  <DegreeName>BA in Physics</DegreeName>
+			  <DegreeDate>
+				<YearMonth>May 2007</YearMonth>
+			  </DegreeDate>
+			  <DegreeMajor>
+				<Name></Name>
+			  </DegreeMajor>
+			  <DegreeMinor>
+				<Name></Name>
+			  </DegreeMinor>
+			  <Comments></Comments>
+			</Degree>
+		</SchoolOrInstitution>
+	</EducationHistory>
+<LicensesAndCertifications>
+<LicenseOrCertification>
+<Name/>
+<Id/>
+<IssuingAuthority/>
+<Description/>
+<EffectiveDate>
+<ValidFrom>
+<AnyDate/>
+</ValidFrom>
+<ValidTo>
+<AnyDate/>
+</ValidTo>
+</EffectiveDate>
+</LicenseOrCertification>
+</LicensesAndCertifications>
+<PatentHistory>
+<Patent>
+<PatentTitle/>
+<Description/>
+<Inventors>
+<InventorName/>
+<InventorName/>
+</Inventors>
+<PatentDetail>
+<PatentMilestone>
+<Status/>
+<Date/>
+</PatentMilestone>
+</PatentDetail>
+</Patent>
+</PatentHistory>
+<PublicationHistory>
+<Article>
+<Title/>
+<Name>
+<FormattedName/>
+</Name>
+<PublicationDate>
+<YearMonth/>
+</PublicationDate>
+<JournalOrSerialName/>
+<Volume/>
+<Issue/>
+<PageNumber/>
+<PublicationLanguage/>
+</Article>
+</PublicationHistory>
+<Languages>
+<Language>
+<LanguageCode>EN</LanguageCode>
+<Read>true</Read>
+<Write>true</Write>
+<Speak>true</Speak>
+</Language>
+</Languages>
+<References>
+<Reference type="Professional">
+<PersonName>
+<FormattedName>Barack Obama</FormattedName>
+</PersonName>
+<PositionTitle>POTUS</PositionTitle>
+<ContactMethod>
+<Telephone>
+<FormattedNumber>1 202 4561111</FormattedNumber>
+</Telephone>
+<InternetEmailAddress>barack@whitehouse.gov</InternetEmailAddress>
+</ContactMethod>
+<Comments>
+President of the Free World.
+</Comments>
+</Reference>
+</References>
+<ResumeAdditionalItems>
+<ResumeAdditionalItem type="Hobbies">
+<EffectiveDate>
+<StartDate>
+<Year>2000</Year>
+</StartDate>
+</EffectiveDate>
+<Description>Get up, get coffe, hang around at front desk, tell you "sweater look nice"</Description>
+</ResumeAdditionalItem>
+</ResumeAdditionalItems>
+<RevisionDate>2003-03-13</RevisionDate>
+</StructuredXMLResume>
+<NonXMLResume>
+<TextResume>
+The resume text would be entered here. No formatting would apply.
+</TextResume>
+<SupportingMaterials>
+<Link>http://www.my-resume.com</Link>
+<Description>Link to my online resume</Description>
+</SupportingMaterials>
+</NonXMLResume>
+</Resume>
