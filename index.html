@@ -7,55 +7,60 @@
 <body>
 <div class="banner"></div>
 <div class="wrap">
+  <div class="address">
+    {{person}}'s Resume <br/>
+    {{streetaddress}} <br/>
+    {{city}}, {{state}} {{zipcode}}<br/>
+    (cell) {{cell}},
+    (office) {{office}} <br/>
+    <a href="mailto:{{email}}">{{email}}</a>
+    <br/><br/>
+  </div>
 
-	<div class="address">
-		{{person}}'s Resume <br/>
-		{{streetaddress}} <br/>
-		{{city}}, {{state}} {{zipcode}}<br/>
-		(cell) {{cell}},
-		(office) {{office}} <br/>
-		<a href="mailto:{{email}}">{{email}}</a>
-		<br/><br/>
-	</div>
+  <ul>
+    <li class='parentCategory'>
+      <div id="Header">Technical Summary</div>
+        <ul>
+         <li>
+         <br/>
+         <p>{{execsummary}}</p>
+        </li>
+        </ul>
+      </li>
+      <li class='parentCategory'>
+       <div id="Header">Objective</div>
+       <ul>
+         <li>
+           <br/>
+            <p>{{objective}}</p>
+         </li>
+         </ul>
+      </li>
+      <li class='parentCategory'>
+        <div id="Header">Work Experience</div>
+      <ul>
+      {% for employment in employers %}
+      <li>
+      <dl>
+        <dt>
+          {{employment.organization}}&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="http://{{employment.orgdomname}}" target="_blank">{{employment.orgdomname}}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          {{employment.startdt}} - {{employment.enddt}}<br/>{{employment.title}}
+        </dt>
+      {% for desc in employment.description %}
+        <dd>{{ desc.text }}</dd>
+      {% endfor %}
+      </dl>
+     </li>
+     {% endfor %}
 
-  		<ul>
-    		<li class='parentCategory'>
-  				<div id="Header">Technical Summary</div>
-        			<ul>
-             			<li>
-             			    <br/>
- 							<p>{{execsummary}}</p>
-
-						</li>
-		 			</ul>
-		 	</li>
-		 	<li class='parentCategory'>
-  				<div id="Header">Objective</div>
-        			<ul>
-             			<li>
-						<br/>
-						<p>{{objective}}</p>
-		   				</li>
-		 			</ul>
-		 	</li>
-    		<li class='parentCategory'>
-	  			<div id="Header">Work Experience</div>
-					<ul>
-						{% for employment in employers %}
-							   <li>
-									<dl>
-										<dt>
-											{{employment.organization}}&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="http://{{employment.orgdomname}}" target="_blank">{{employment.orgdomname}}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											{{employment.startdt}} - {{employment.enddt}}<br/>{{employment.title}}
-										</dt>
-										{% for desc in employment.description %}
-										<dd>{{ desc.text }}</dd>
-										{% endfor %}
-									</dl>
-								</li>
-						{% endfor %}
-					</ul>
-    		</li>
+       {% for reference in references %}
+         {{reference.name}}<br />
+         {{reference.position}}<br />
+         {{reference.telephone}}<br />
+         {{reference.email}}<br />
+       {% endfor %}
+ </ul>
+</li>
 </body>
 </html>
