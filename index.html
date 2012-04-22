@@ -53,14 +53,38 @@
       </dl>
      </li>
      {% endfor %}
-
+  </ul>
+  </li>
+  <li class='parentCategory'>
+        <div id="Header">References</div>
+      <ul>
        {% for reference in references %}
-         {{reference.name}}<br />
-         {{reference.position}}<br />
-         {{reference.telephone}}<br />
-         {{reference.email}}<br />
-       {% endfor %}
- </ul>
-</li>
+      <li>
+      <dl>
+        <dt>
+         <b> Name: &nbsp; </b> {{reference.name}}<br />
+         <b> Position: &nbsp; </b> {{reference.position}}<br />
+         <b> Telephone: &nbsp; </b>{{reference.telephone}}<br />
+        </dt>
+        <dd><a href="mailto:{{reference.email}}">{{reference.email}}</a> <br /></dd>
+        {% endfor %}
+      </dl>
+  </li>
+  
+
+  <li class='parentCategory'>
+        <div id="Header">Additional Items</div>
+      <ul>
+       {% for item in additionalItems %}
+      <li>
+      <dl>
+        <dt>
+         <b> Description: &nbsp; </b> {{item.description}}<br />
+        </dt>
+        {% endfor %}
+      </dl>
+  </li>
+
+
 </body>
 </html>

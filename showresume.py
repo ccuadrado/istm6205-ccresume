@@ -46,11 +46,18 @@ class MainPage(webapp.RequestHandler):
       references = []
       for r in node.findall('.//References'):
         refs= {}
-        refs['name'] = r.findtext('Reference/FormattedName')
+        refs['name'] = r.findtext('Reference/PersonName/FormattedName')
         refs['position'] = r.findtext('Reference/PositionTitle')
         refs['telephone'] = r.findtext('Reference/ContactMethod/Telephone/FormattedNumber')
         refs['email'] = r.findtext('Reference/ContactMethod/InternetEmailAddress')
         references.append(refs)
+
+      additionalItems = []
+      for a in node.findall('.//ResumeAdditionalItems')
+        items = {}
+        items['type'] = a.attributes['type']
+        items['description'] = a.findtext('ResumeAdditionalItem/Description')
+        additionalItems.append(items)
 
       template_values = {
          'person': personname,
@@ -66,6 +73,7 @@ class MainPage(webapp.RequestHandler):
          'employers': employers,
          'school': school,
          'references': references,
+         'additionalItems': additionalItems,
       }
       
       path = os.path.join(os.path.dirname(__file__), 'index.html')
