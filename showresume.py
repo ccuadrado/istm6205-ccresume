@@ -53,9 +53,8 @@ class MainPage(webapp.RequestHandler):
         references.append(refs)
 
       additionalItems = []
-      for a in node.findall('.//ResumeAdditionalItems')
+      for a in node.findall('.//ResumeAdditionalItems'):
         items = {}
-        items['type'] = a.attributes['type']
         items['description'] = a.findtext('ResumeAdditionalItem/Description')
         additionalItems.append(items)
 
