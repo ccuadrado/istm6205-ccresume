@@ -1,0 +1,166 @@
+<html>
+<head>
+<title>{{person}}'s Resume</title>
+<script src="/Resume/jquery-1.3.2.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript">
+     //here you place the ids of every element you want.
+     var ids=new Array('content','contact-info');
+
+     function switchid(id)
+     { 
+      hideallids();
+      showdiv(id);
+     }
+
+    function hideallids()
+    {
+    //loop through the array and hide each element by id
+      for (var i=0;i<ids.length;i++)
+      {
+        hidediv(ids[i]);
+      }       
+    }
+
+    function hidediv(id) 
+    {
+      //safe function to hide an element with a specified id
+      if (document.getElementById) 
+      { // DOM3 = IE5, NS6
+        document.getElementById(id).style.display = 'none';
+      }
+      else 
+      {
+        if (document.layers) 
+        { // Netscape 4
+          document.id.display = 'none';
+        }
+        else 
+        { // IE 4
+          document.all.id.style.display = 'none';
+        }
+      }
+    }
+
+    function showdiv(id) 
+    {
+      //safe function to show an element with a specified id
+      if (document.getElementById) 
+      { // DOM3 = IE5, NS6
+        document.getElementById(id).style.display = 'block';
+      }
+      else 
+      {
+        if (document.layers) 
+        { // Netscape 4
+          document.id.display = 'block';
+        }
+        else 
+        { // IE 4
+          document.all.id.style.display = 'block';
+        }
+      }
+    }
+    
+    function showAll()
+    {
+    //loop through the array and show each element by id
+      for (var i=0;i<ids.length;i++)
+      {
+        showdiv(ids[i]);
+      }       
+    }
+
+
+  </script>
+
+<link rel='stylesheet' type='text/css' href='/Resume/style.css' />
+</head>
+<body onload="hideallids()">
+<div id="contact-info">
+  <div class="banner"></div>
+    <div class="wrap">
+    <div class="address">
+    {{person}}'s Resume <br/>
+    {{streetaddress}} <br/>
+    {{city}}, {{state}} {{zipcode}}<br/>
+    (cell) {{cell}},
+    (office) {{office}} <br/>
+    <a href="mailto:{{email}}">{{email}}</a>
+    <br/><br/>
+    </div>
+    </div>
+  </div>
+</div>
+<div>
+  <ul>
+    <li class='parentCategory'>
+      <div id="Header" >Technical Summary</div>
+        <ul>
+         <li>
+         <br/>
+         <p onclick="showAll()">{{execsummary}}</p>
+        </li>
+        </ul>
+      </li>
+      <li class='parentCategory'>
+</div>
+<div id="content">
+       <div id="Header">Objective</div>
+       <ul>
+         <li>
+           <br/>
+            <p>{{objective}}</p>
+         </li>
+         </ul>
+      </li>
+      <li class='parentCategory'>
+  <div id="Header">Work Experience</div>
+      <ul>
+      {% for employment in employers %}
+      <li>
+      <dl>
+        <dt>
+          {{employment.organization}}&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="http://{{employment.orgdomname}}" target="_blank">{{employment.orgdomname}}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          {{employment.startdt}} - {{employment.enddt}}<br/>{{employment.title}}
+        </dt>
+        {% for desc in employment.description %}
+        <dd>{{ desc.text }}</dd>
+      {% endfor %}
+      </dl>
+     </li>
+     {% endfor %}
+  </ul>
+  </li>
+  <li class='parentCategory'>
+        <div id="Header">References</div>
+      <ul>
+       {% for reference in references %}
+      <li>
+      <dl>
+        <dt>
+         <b> Name: &nbsp; </b> {{reference.name}}<br />
+         <b> Position: &nbsp; </b> {{reference.position}}<br />
+         <b> Telephone: &nbsp; </b>{{reference.telephone}}<br />
+        </dt>
+        <dd><a href="mailto:{{reference.email}}">{{reference.email}}</a> <br /></dd>
+        {% endfor %}
+      </dl>
+  </li>
+  
+  <li class='parentCategory'>
+        <div id="Header">Additional Items</div>
+      <ul>
+       {% for item in additionalItems %}
+      <li>
+      <dl>
+        <dt>
+         <b> Description: &nbsp; </b> {{item.description}}<br />
+        </dt>
+        {% endfor %}
+      </dl>
+  </li>
+</div>
+
+</body>
+</html>
